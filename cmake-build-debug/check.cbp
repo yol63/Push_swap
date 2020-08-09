@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="check"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/romarash/Desktop/check/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/romarash/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/romarash/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/romarash/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/romarash/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/romarash/Desktop/check/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/romarash/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/romarash/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/romarash/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/romarash/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/romarash/Desktop/check/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/romarash/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/romarash/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/romarash/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/romarash/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="check">
+				<Option output="/Users/romarash/Desktop/check/cmake-build-debug/check" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/romarash/Desktop/check/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/romarash/Desktop/check/includes"/>
+					<Add directory="/Users/romarash/Desktop/check/libft/includes"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/romarash/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 check"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/romarash/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/romarash/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/romarash/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="check/fast">
+				<Option output="/Users/romarash/Desktop/check/cmake-build-debug/check" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/romarash/Desktop/check/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/romarash/Desktop/check/includes"/>
+					<Add directory="/Users/romarash/Desktop/check/libft/includes"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/romarash/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 check/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/romarash/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/romarash/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/romarash/Desktop/check/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/romarash/Desktop/check/includes/operation_list.h">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/includes/parse.h">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/includes/sort_utils.h">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/includes/stack.h">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/includes/stack_insertion_sort.h">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/includes/stack_insertion_sort_utils.h">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/includes/stack_sort.h">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/includes/stack_sort3.h">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/includes/stack_split.h">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/includes/two_stacks.h">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/includes/two_stacks_operation.h">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/includes/utils.h">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/includes/vector.h">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/includes/get_next_line.h">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/includes/libft.h">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_atoi.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_bzero.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_count.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_free_arr.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_isalnum.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_isalpha.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_isascii.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_isdigit.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_islower.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_isprint.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_isspace.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_isupper.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_itoa.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_lstadd.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_lstdel.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_lstdelone.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_lstiter.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_lstmap.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_lstnew.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_memalloc.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_memccpy.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_memchr.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_memcmp.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_memcpy.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_memdel.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_memmove.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_memset.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_putchar.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_putchar_fd.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_putendl.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_putendl_fd.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_putnbr.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_putnbr_fd.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_putstr.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_putstr_fd.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_strcat.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_strchr.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_strclr.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_strcmp.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_strcpy.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_strdel.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_strdup.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_strequ.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_striter.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_striteri.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_strjoin.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_strlcat.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_strlen.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_strmap.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_strmapi.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_strncat.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_strncmp.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_strncpy.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_strnequ.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_strnew.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_strnstr.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_strrchr.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_strsplit.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_strstr.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_strsub.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_strtrim.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_tolower.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/ft_toupper.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/libft/sources/get_next_line.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/sources/insertion_sort.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/sources/operation_list.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/sources/parse.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/sources/push_swap.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/sources/sort_utils.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/sources/stack1.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/sources/stack2.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/sources/stack_insertion_sort_utils1.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/sources/stack_insertion_sort_utils2.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/sources/stack_sort.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/sources/stack_sort3.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/sources/stack_split.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/sources/two_stacks_1.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/sources/two_stacks_2.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/sources/two_stacks_3.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/sources/two_stacks_4.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/sources/utils1.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/sources/utils2.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/sources/utils3.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/sources/vector.c">
+			<Option target="check"/>
+		</Unit>
+		<Unit filename="/Users/romarash/Desktop/check/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
