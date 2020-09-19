@@ -1,113 +1,69 @@
-NAME_PS = push_swap
-NAME_CH = checker
+NAME = push_swap
+NAME_C = checker
+FILE_C = checker
+FILE_PW = pushswap
+COM = gcc
+HEAD_PW = ./includes/
+HEAD_L = ./libft/
+HEAD_LIB = libft.h
+HEAD_H = push_swap.h
+HEAD_F = $(HEAD_PW) \
+		$(HEAD_L)
+HEADS = $(addprefix -I, $(HEAD_F))
+LIB_F = ./libft/
+LIB = libft.a
+LIB_D = $(addprefix $(LIB_F), $(LIB))
+LIB_C = -L $(LIB_F) -lft
+SOUS = ./srcs/
+SOUS_FIL1 = algoritm.c \
+		   support.c \
+		   support2.c \
+		   checker.c \
+		   ft_command.c \
+		   ft_sotr.c \
+		   support3.c \
+			ft_ps.c \
+			ft_checker.c \
+		   use_command.c
+SOUS_FIL2 = algoritm.c \
+		   support.c \
+		   support2.c \
+		   ft_command.c \
+		   ft_sotr.c \
+		   push_swap.c \
+			ft_ps.c \
+		   support3.c \
+			ft_checker.c \
+		   use_command.c
+OBJS1 = $(SOUS_FIL1:.c=.o)
+OBJS2 = $(SOUS_FIL2:.c=.o)
+SOUS_F1 = $(addprefix $(SOUS), $(SOUS_FIL1))
+SOUS_F2 = $(addprefix $(SOUS), $(SOUS_FIL2))
+OBJS_F1 = $(addprefix $(BIN), $(OBJS1))
+OBJS_F2 = $(addprefix $(BIN), $(OBJS2))
+TRASH = push_swap.dSYM
+BIN = ./bin/
+FLAGS = -Wall -Wextra -Werror
+REMOVE = rm -rf
 
-CC = gcc
-FLAGS = -Wall -Werror -Wextra
-LIBRARIES = -lft -L$(LIBFT_DIRECTORY)
-INCLUDES = -I$(HEADERS_DIRECTORY) -I$(LIBFT_HEADERS)
+.PHONY: all clean re
 
-LIBFT = $(LIBFT_DIRECTORY)libft.a
-LIBFT_DIRECTORY = ./libft/
-LIBFT_HEADERS = $(LIBFT_DIRECTORY)includes/
-
-HEADERS_LIST = operation_list.h\
-	parse.h\
-	sort_utils.h\
-	stack.h\
-	stack_insertion_sort.h\
-	stack_insertion_sort_utils.h\
-	stack_sort.h\
-	stack_sort3.h\
-	stack_split.h\
-	two_stacks.h\
-	two_stacks_operation.h\
-	utils.h\
-	vector.h
-HEADERS_DIRECTORY = ./includes/
-HEADERS = $(addprefix $(HEADERS_DIRECTORY), $(HEADERS_LIST))
-
-SOURCES_DIRECTORY = ./sources/
-SOURCES_LIST = 	insertion_sort.c\
-	operation_list.c\
-	parse.c\
-	sort_utils.c\
-	stack1.c\
-	stack2.c\
-	stack_insertion_sort_utils1.c\
-	stack_insertion_sort_utils2.c\
-	stack_sort.c\
-	stack_sort3.c\
-	stack_split.c\
-	two_stacks_1.c\
-	two_stacks_2.c\
-	two_stacks_3.c\
-	two_stacks_4.c\
-	utils1.c\
-	utils2.c\
-	utils3.c\
-	vector.c
-SOURCES_LIST_PS = push_swap.c
-SOURCES_LIST_CH = checker.c
-
-SOURCES = $(addprefix $(SOURCES_DIRECTORY), $(SOURCES_LIST))
-SOURCES_PS = $(addprefix $(SOURCES_DIRECTORY), $(SOURCES_LIST_PS))
-SOURCES_CH = $(addprefix $(SOURCES_DIRECTORY), $(SOURCES_LIST_CH))
-
-OBJECTS_DIRECTORY = objects/
-OBJECTS_LIST = $(patsubst %.c, %.o, $(SOURCES_LIST))
-OBJECTS_LIST_PS = $(patsubst %.c, %.o, $(SOURCES_LIST_PS))
-OBJECTS_LIST_CH = $(patsubst %.c, %.o, $(SOURCES_LIST_CH))
-
-OBJECTS	= $(addprefix $(OBJECTS_DIRECTORY), $(OBJECTS_LIST))
-OBJECTS_PS = $(addprefix $(OBJECTS_DIRECTORY), $(OBJECTS_LIST_PS))
-OBJECTS_CH = $(addprefix $(OBJECTS_DIRECTORY), $(OBJECTS_LIST_CH))
-
-# COLORS
-
-GREEN = \033[0;32m
-RED = \033[0;31m
-RESET = \033[0m
-
-.PHONY: all clean fclean re
-
-all: $(NAME_PS) $(NAME_CH) $(NAME_VS)
-
-$(NAME_PS): $(LIBFT) $(OBJECTS_DIRECTORY) $(OBJECTS) $(OBJECTS_PS)
-	@$(CC) $(FLAGS) $(LIBRARIES) $(INCLUDES) $(OBJECTS) $(OBJECTS_PS) -o $(NAME_PS)
-	@echo "\n$(NAME_PS): $(GREEN)$(NAME_PS) object files were created$(RESET)"
-	@echo "$(NAME_PS): $(GREEN)$(NAME_PS) was created$(RESET)"
-
-$(NAME_CH): $(LIBFT) $(OBJECTS_DIRECTORY) $(OBJECTS) $(OBJECTS_CH)
-	@$(CC) $(FLAGS) $(LIBRARIES) $(INCLUDES) $(OBJECTS) $(OBJECTS_CH) -o $(NAME_CH)
-	@echo "\n$(NAME_PS): $(GREEN)$(NAME_CH) object files were created$(RESET)"
-	@echo "$(NAME_PS): $(GREEN)$(NAME_CH) was created$(RESET)"
-
-$(OBJECTS_DIRECTORY):
-	@mkdir -p $(OBJECTS_DIRECTORY)
-	@echo "$(NAME_PS): $(GREEN)$(OBJECTS_DIRECTORY) was created$(RESET)"
-
-$(OBJECTS_DIRECTORY)%.o : $(SOURCES_DIRECTORY)%.c $(HEADERS)
-	@$(CC) $(FLAGS) -c $(INCLUDES) $< -o $@
-	@echo "$(GREEN).$(RESET)\c"
-
-$(LIBFT):
-	@echo "$(NAME_PS): $(GREEN)creating $(LIBFT)...$(RESET)"
-	@$(MAKE) -sC $(LIBFT_DIRECTORY)
-
+all: $(NAME) $(NAME_C)
+$(NAME): $(OBJS_F2) $(HEAD_PW)$(HEAD_H) $(LIB_D)
+	$(COM) $(FLAGS) -o $@ $(OBJS_F2) $(HEADS) $(LIB_C)
+$(NAME_C): $(OBJS_F1) $(HEAD_PW)$(HEAD_H) $(LIB_D)
+	$(COM) $(FLAGS) -o $@ $(OBJS_F1) $(HEADS) $(LIB_C)
+$(LIB_D): $(LIB_F)
+	$(MAKE) -sC $(LIB_F) all
+$(BIN)%.o: $(SOUS)%.c
+	mkdir -p $(BIN) && \
+	$(COM) $(FLAGS) -c $< -o $@ $(HEADS)
 clean:
-	@$(MAKE) -sC $(LIBFT_DIRECTORY) clean
-	@rm -rf $(OBJECTS_DIRECTORY)
-	@echo "$(NAME_PS): $(RED)$(OBJECTS_DIRECTORY) was deleted$(RESET)"
-	@echo "$(NAME_PS): $(RED)object files were deleted$(RESET)"
-
+	@$(REMOVE) $(OBJS_F1) $(BIN) $(TRASH)
+	@$(REMOVE) $(OBJS_F2) $(BIN) $(TRASH)
+	@make -sC $(LIB_F) clean
 fclean: clean
-	@rm -f $(LIBFT)
-	@echo "$(NAME_PS): $(RED)$(LIBFT) was deleted$(RESET)"
-	@rm -f $(NAME_PS)
-	@echo "$(NAME_PS): $(RED)$(NAME_PS) was deleted$(RESET)"
-	@rm -f $(NAME_CH)
-	@echo "$(NAME_PS): $(RED)$(NAME_CH) was deleted$(RESET)"
-
-re:
-	@$(MAKE) fclean
-	@$(MAKE) all
+	@$(REMOVE) $(NAME)
+	@$(REMOVE) $(NAME_C)
+	@make -sC $(LIB_F) fclean
+re: fclean all

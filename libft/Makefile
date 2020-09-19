@@ -1,14 +1,8 @@
 NAME = libft.a
-CC = gcc
-FLAGS = -Wall -Werror -Wextra -c
-INCLUDES = -I$(HEADERS_DIRECTORY)
-HEADERS_LIST = \
-	libft.h\
-	get_next_line.h
-HEADERS_DIRECTORY = ./includes/
-HEADERS = $(addprefix $(HEADERS_DIRECTORY), $(HEADERS_LIST))
-SOURCES_DIRECTORY = ./sources/
-SOURCES_LIST = ft_memset.c \
+
+INCLUDES = libft.h
+
+SRC	= 	ft_memset.c \
 		ft_bzero.c \
 		ft_memcpy.c \
 		ft_memccpy.c \
@@ -72,44 +66,22 @@ SOURCES_LIST = ft_memset.c \
 		ft_isupper.c \
 		ft_isspace.c \
 		get_next_line.c
-SOURCES = $(addprefix $(SOURCES_DIRECTORY), $(SOURCES_LIST))
-OBJECTS_DIRECTORY = objects/
-OBJECTS_LIST = $(patsubst %.c, %.o, $(SOURCES_LIST))
-OBJECTS	= $(addprefix $(OBJECTS_DIRECTORY), $(OBJECTS_LIST))
 
-# COLORS
-
-GREEN = \033[0;32m
-RED = \033[0;31m
-RESET = \033[0m
-
-.PHONY: all clean fclean re
+OBJ	= $(SRC:%.c=%.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJECTS_DIRECTORY) $(OBJECTS)
-	@ar rc $(NAME) $(OBJECTS)
-	@ranlib $(NAME)
-	@echo "\n$(NAME): $(GREEN)object files were created$(RESET)"
-	@echo "$(NAME): $(GREEN)$(NAME) was created$(RESET)"
-
-$(OBJECTS_DIRECTORY):
-	@mkdir -p $(OBJECTS_DIRECTORY)
-	@echo "$(NAME): $(GREEN)$(OBJECTS_DIRECTORY) was created$(RESET)"
-
-$(OBJECTS_DIRECTORY)%.o : $(SOURCES_DIRECTORY)%.c $(HEADERS)
-	@$(CC) $(FLAGS) $(INCLUDES) $< -o $@
-	@echo "$(GREEN).$(RESET)\c"
+$(NAME) : $(OBJ)
+	gcc -Wall -Werror -Wextra -c $(SRC) -I $(INCLUDES)
+	ar rc $(NAME) $(OBJ)
+	ranlib $(NAME)
 
 clean:
-	@rm -rf $(OBJECTS_DIRECTORY)
-	@echo "$(NAME): $(RED)$(OBJECTS_DIRECTORY) was deleted$(RESET)"
-	@echo "$(NAME): $(RED)object files were deleted$(RESET)"
+	/bin/rm -f $(OBJ)
 
 fclean: clean
-	@rm -f $(NAME)
-	@echo "$(NAME): $(RED)$(NAME) was deleted$(RESET)"
+	/bin/rm -f $(NAME)
 
-re:
-	@$(MAKE) fclean
-	@$(MAKE) all
+re: fclean all
+
+.PHONY: all clean fclean re
