@@ -22,22 +22,27 @@ int main(int argc, char ** argv) {
     stack2[0] = 0;
     ft_algoritm(stack1, stack2);
 
-    int i = 0;
-    while (i < stack1[0] + 1) {
-        printf("=%d=", stack1[i]);
-        i++;
-    }
+///    int i = 0;
+///  while (i < stack1[0] + 1)
+///    {
+///        printf("=%d=", stack1[i]);
+///        i++;
+///    }
 
-    i = 0;
-    while (i < stack2[0] + 1) {
-        printf("=e%d=", stack2[i]);
-        i++;
-    }
+///    i = 0;
+///    while (i < stack2[0] + 1) {
+///        printf("=e%d=", stack2[i]);
+///        i++;
+///    }
 
-    if (ft_istrue(stack1, stack2) == 0)
-        write(1,"KO\n",3);
-    else
-        write(1,"OK\n",3);
-    write(1,"Hello\n",6);
-    return(0);
+///    if (ft_istrue(stack1, stack2) == 0)
+///        write(1,"KO\n",3);
+///    else
+///        write(1,"OK\n",3);
+///    write(1,"Hello\n",6);
+    free(stack1);
+    free(stack2);
+    stack1 = NULL;
+    stack2 = NULL;
+return(0);
 }

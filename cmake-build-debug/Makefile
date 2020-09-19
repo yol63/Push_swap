@@ -68,10 +68,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/romarash/Desktop/push_swap1
+CMAKE_SOURCE_DIR = /Users/romarash/Desktop/push_swap
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/romarash/Desktop/push_swap1/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/romarash/Desktop/push_swap/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romarash/Desktop/push_swap1/cmake-build-debug/CMakeFiles /Users/romarash/Desktop/push_swap1/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romarash/Desktop/push_swap/cmake-build-debug/CMakeFiles /Users/romarash/Desktop/push_swap/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romarash/Desktop/push_swap1/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romarash/Desktop/push_swap/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -1898,33 +1898,6 @@ srcs/algoritm.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap1.dir/build.make CMakeFiles/push_swap1.dir/srcs/algoritm.c.s
 .PHONY : srcs/algoritm.c.s
 
-srcs/checker.o: srcs/checker.c.o
-
-.PHONY : srcs/checker.o
-
-# target to build an object file
-srcs/checker.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap1.dir/build.make CMakeFiles/push_swap1.dir/srcs/checker.c.o
-.PHONY : srcs/checker.c.o
-
-srcs/checker.i: srcs/checker.c.i
-
-.PHONY : srcs/checker.i
-
-# target to preprocess a source file
-srcs/checker.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap1.dir/build.make CMakeFiles/push_swap1.dir/srcs/checker.c.i
-.PHONY : srcs/checker.c.i
-
-srcs/checker.s: srcs/checker.c.s
-
-.PHONY : srcs/checker.s
-
-# target to generate assembly for a file
-srcs/checker.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap1.dir/build.make CMakeFiles/push_swap1.dir/srcs/checker.c.s
-.PHONY : srcs/checker.c.s
-
 srcs/ft_checker.o: srcs/ft_checker.c.o
 
 .PHONY : srcs/ft_checker.o
@@ -2032,6 +2005,33 @@ srcs/ft_sotr.s: srcs/ft_sotr.c.s
 srcs/ft_sotr.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap1.dir/build.make CMakeFiles/push_swap1.dir/srcs/ft_sotr.c.s
 .PHONY : srcs/ft_sotr.c.s
+
+srcs/push_swap.o: srcs/push_swap.c.o
+
+.PHONY : srcs/push_swap.o
+
+# target to build an object file
+srcs/push_swap.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap1.dir/build.make CMakeFiles/push_swap1.dir/srcs/push_swap.c.o
+.PHONY : srcs/push_swap.c.o
+
+srcs/push_swap.i: srcs/push_swap.c.i
+
+.PHONY : srcs/push_swap.i
+
+# target to preprocess a source file
+srcs/push_swap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap1.dir/build.make CMakeFiles/push_swap1.dir/srcs/push_swap.c.i
+.PHONY : srcs/push_swap.c.i
+
+srcs/push_swap.s: srcs/push_swap.c.s
+
+.PHONY : srcs/push_swap.s
+
+# target to generate assembly for a file
+srcs/push_swap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap1.dir/build.make CMakeFiles/push_swap1.dir/srcs/push_swap.c.s
+.PHONY : srcs/push_swap.c.s
 
 srcs/support.o: srcs/support.c.o
 
@@ -2345,9 +2345,6 @@ help:
 	@echo "... srcs/algoritm.o"
 	@echo "... srcs/algoritm.i"
 	@echo "... srcs/algoritm.s"
-	@echo "... srcs/checker.o"
-	@echo "... srcs/checker.i"
-	@echo "... srcs/checker.s"
 	@echo "... srcs/ft_checker.o"
 	@echo "... srcs/ft_checker.i"
 	@echo "... srcs/ft_checker.s"
@@ -2360,6 +2357,9 @@ help:
 	@echo "... srcs/ft_sotr.o"
 	@echo "... srcs/ft_sotr.i"
 	@echo "... srcs/ft_sotr.s"
+	@echo "... srcs/push_swap.o"
+	@echo "... srcs/push_swap.i"
+	@echo "... srcs/push_swap.s"
 	@echo "... srcs/support.o"
 	@echo "... srcs/support.i"
 	@echo "... srcs/support.s"

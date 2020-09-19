@@ -21,24 +21,21 @@ int main(int argc, char ** argv) {
     if(!(stack2 = (int*)malloc(sizeof(int) * (stack1[0] + 1))))
         exit(1);
     stack2[0] = 0;
-    while (get_next_line(0, &line) != 0) {
+    while (get_next_line(0, &line) != 0)
+    {
         ft_command(stack1, stack2, line);
-        int i = 0;
-        while (i < stack1[0] + 1) {
-            printf("=%d=", stack1[i]);
-            i++;
-        }
-        i = 0;
-        printf("\n");
-        while (i < stack2[0] + 1) {
-            printf("=%d=", stack2[i]);
-            i++;
-        }
+
         free(line);
     }
+    free(line);
+
     if (ft_istrue(stack1, stack2) == 1)
         write(1,"OK\n",3);
     else
         write(1,"KO\n",3);
+    free(stack1);
+    free(stack2);
+    stack1 = NULL;
+    stack2 = NULL;
     return 0;
 }

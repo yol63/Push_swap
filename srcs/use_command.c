@@ -28,12 +28,12 @@ void    ft_use_command_r(int *stack)
 
     i = 1;
     temp = stack[1];
-    while (i < stack[0] + 1)
+    while (i < stack[0])
     {
         stack[i] = stack[i + 1];
         i++;
     }
-    stack[i - 1] = temp;
+    stack[i] = temp;
 }
 
 void    ft_use_command_rr(int *stack)
@@ -68,7 +68,7 @@ void ft_use_command_p(int* a, int* b)
     }
     a[1] = b[1];
     i = 1;
-    while(i < b[0] + 1)
+    while(i < b[0])
     {
         b[i] = b[i + 1];
         i++;

@@ -75,12 +75,12 @@ add_executable(push_swap1
         libft/get_next_line.h
         libft/libft.h
         srcs/algoritm.c
-        srcs/checker.c
+##        srcs/checker.c
         srcs/ft_checker.c
         srcs/ft_command.c
         srcs/ft_ps.c
         srcs/ft_sotr.c
-##        srcs/push_swap.c
+        srcs/push_swap.c
         srcs/support.c
         srcs/support2.c
         srcs/support3.c

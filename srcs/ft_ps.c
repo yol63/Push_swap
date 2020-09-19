@@ -17,8 +17,8 @@ void ft_ret_instacka(int* stack1, int* stack2)
     int i;
     int maxindex;
 
-    ft_use_command_p(stack2,stack1);
-    write(1,"pa\n",3);
+///    ft_use_command_p(stack2,stack1);
+///    write(1,"pa\n",3);
     while(stack2[0] != 0)
     {
         maxindex = 1;
@@ -29,7 +29,7 @@ void ft_ret_instacka(int* stack1, int* stack2)
                 maxindex = i;
             i++;
         }
-        printf("index = %d,maxcount = %d\n",maxindex ,stack2[maxindex]);
+///        printf("index = %d,maxcount = %d\n",maxindex ,stack2[maxindex]);
         if (maxindex < stack2[0] / 2)
             ft_use_rb(stack2,stack1 ,maxindex,1);
         else
@@ -52,7 +52,7 @@ void ft_algoritm_100(int* stack1, int*stack2)
         num = ft_search_number(stack1, chanks, j);
         while (num != -1)
         {
-            printf("num = %d\n", num);
+///            printf("num = %d\n", num);
             if (num < stack1[0] / 2)
                 ft_use_rb(stack1,stack2 ,num,0);
             else
@@ -60,14 +60,16 @@ void ft_algoritm_100(int* stack1, int*stack2)
             num = ft_search_number(stack1, chanks, j);
         }
         j++;
-        int i = 0;
-        while (i < stack2[0] + 1)
-        {
-            printf("=e%d=", stack2[i]);
-            i++;
-        }
+///        int i = 0;
+///       while (i < stack2[0] + 1)
+///      {
+///           printf("=e%d=", stack2[i]);
+///           i++;
+///        }
     }
     ft_ret_instacka(stack1,stack2);
+    free(chanks);
+    chanks = NULL;
 }
 
 void    ft_algoritm(int *stack1, int*stack2)
@@ -76,11 +78,11 @@ void    ft_algoritm(int *stack1, int*stack2)
         ft_algoritm_3(stack1);
    else if(stack1[0] == 5)
         ft_algoritm_5(stack1,stack2);
-     else //if(stack1[0] == 100)
+     else ///if(stack1[0] == 100)
         ft_algoritm_100(stack1,stack2);
-/*    else if(stack1[0] == 500)
-        ft_algoritm_500(stack1,stack2);
-    else
-        ft_algoritm_univers(stack1,stack2);*/
+///    else if(stack1[0] == 500)
+///        ft_algoritm_500(stack1,stack2);
+///    else
+///        ft_algoritm_univers(stack1,stack2);*/
 }
 

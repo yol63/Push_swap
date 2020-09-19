@@ -51,14 +51,14 @@ void ft_algoritm_3(int* stack1)
 void ft_algoritm_52(int* stack1, int*stack2)
 {
     ft_use_command_p(stack1,stack2);
-    write(1,"pb\n",3);
+    write(1,"pa\n",3);
     if(stack1[1] > stack1[2])
     {
         ft_use_command_r(stack1);
         write(1,"ra\n",3);
     }
     ft_use_command_p(stack1,stack2);
-    write(1,"pb\n",3);
+    write(1,"pa\n",3);
     if(stack1[1] > stack1[2] && stack1[0] > stack1[5])
     {
         ft_use_command_r(stack1);
@@ -76,9 +76,9 @@ void ft_algoritm_5(int* stack1, int*stack2)
     if (ft_istrue(stack1, stack2) == 1)
         return ;
     ft_use_command_p(stack2,stack1);
-    write(1,"pa\n",3);
+    write(1,"pb\n",3);
     ft_use_command_p(stack2,stack1);
-    write(1,"pa\n",3);
+    write(1,"pb\n",3);
     ft_algoritm_3(stack1);
     if(stack2[1] > stack2[2])
     {

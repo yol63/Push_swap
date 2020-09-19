@@ -6,5 +6,5 @@ C_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacO
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/romarash/Desktop/push_swap1/includes -I/Users/romarash/Desktop/push_swap1/libft 
+C_INCLUDES = -I/Users/romarash/Desktop/push_swap/includes -I/Users/romarash/Desktop/push_swap/libft 
 

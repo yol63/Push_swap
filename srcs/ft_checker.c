@@ -25,6 +25,8 @@ int *ft_checkdata_one(char **argv)
 
     arr = ft_strsplit(argv[1]);
     res = ft_chartoint(arr);
+    ft_free_arr(arr);
+///    arr = NULL;
     return(res);
 }
 
@@ -42,12 +44,12 @@ int *ft_checkdata(int argc,char **argv)
         exit(1);
     }
 
-    int i = 0;
-    while(i < res[0] + 1)
-    {
-        printf("d%dd \n", res[i]);
-        i++;
-    }
+///    int i = 0;
+///    while(i < res[0] + 1)
+///    {
+///        printf("d%dd \n", res[i]);
+///        i++;
+///    }
     return(res);
 }
 
@@ -66,5 +68,4 @@ int    ft_istrue(int const* stack1, int const* stack2)
         i++;
     }
     return (1);
-
 }

@@ -262,11 +262,6 @@ CMakeFiles/push_swap1.dir/srcs/algoritm.c.o: ../libft/get_next_line.h
 CMakeFiles/push_swap1.dir/srcs/algoritm.c.o: ../libft/libft.h
 CMakeFiles/push_swap1.dir/srcs/algoritm.c.o: ../srcs/algoritm.c
 
-CMakeFiles/push_swap1.dir/srcs/checker.c.o: ../includes/push_swap.h
-CMakeFiles/push_swap1.dir/srcs/checker.c.o: ../libft/get_next_line.h
-CMakeFiles/push_swap1.dir/srcs/checker.c.o: ../libft/libft.h
-CMakeFiles/push_swap1.dir/srcs/checker.c.o: ../srcs/checker.c
-
 CMakeFiles/push_swap1.dir/srcs/ft_checker.c.o: ../includes/push_swap.h
 CMakeFiles/push_swap1.dir/srcs/ft_checker.c.o: ../libft/get_next_line.h
 CMakeFiles/push_swap1.dir/srcs/ft_checker.c.o: ../libft/libft.h
@@ -286,6 +281,11 @@ CMakeFiles/push_swap1.dir/srcs/ft_sotr.c.o: ../includes/push_swap.h
 CMakeFiles/push_swap1.dir/srcs/ft_sotr.c.o: ../libft/get_next_line.h
 CMakeFiles/push_swap1.dir/srcs/ft_sotr.c.o: ../libft/libft.h
 CMakeFiles/push_swap1.dir/srcs/ft_sotr.c.o: ../srcs/ft_sotr.c
+
+CMakeFiles/push_swap1.dir/srcs/push_swap.c.o: ../includes/push_swap.h
+CMakeFiles/push_swap1.dir/srcs/push_swap.c.o: ../libft/get_next_line.h
+CMakeFiles/push_swap1.dir/srcs/push_swap.c.o: ../libft/libft.h
+CMakeFiles/push_swap1.dir/srcs/push_swap.c.o: ../srcs/push_swap.c
 
 CMakeFiles/push_swap1.dir/srcs/support.c.o: ../includes/push_swap.h
 CMakeFiles/push_swap1.dir/srcs/support.c.o: ../libft/get_next_line.h

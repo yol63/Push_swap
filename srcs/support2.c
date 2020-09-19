@@ -46,7 +46,7 @@ int			*ft_chartoint(char** src)
     int*    res;
 
     n = ft_countnumber(src);
-    printf("n = %d\n",n);
+///    printf("n = %d\n",n);
     i = 1;
     if(!(res = (int*)malloc(sizeof(int) * (n + 1))))
             exit(1);
@@ -56,10 +56,10 @@ int			*ft_chartoint(char** src)
         j = 1;
         while(j < i)
         {
-            printf("i = %d, j = %d, res = %d\n",i,j,ft_atoi(src[i - 1]));
+///            printf("i = %d, j = %d, res = %d\n",i,j,ft_atoi(src[i - 1]));
             if(res[j] == ft_atoi(src[i - 1]))
             {
-                write(1,"repeat number\0",14);
+                write(1,"repeat number\n",14);
                 exit(1);
             }
             j++;
@@ -80,12 +80,12 @@ int *ft_checkdata_alot(int argc,char **argv)
    i = 1;
    res = ft_strnew(0);
 
-    int k = 0;
-    while(argv[k])
-    {
-        printf("a%sa \n",argv[k]);
-        k++;
-    }
+///    int k = 0;
+///    while(argv[k])
+///    {
+///        printf("a%sa \n",argv[k]);
+///        k++;
+///   }
 
    while (i < argc)
     {
@@ -97,21 +97,26 @@ int *ft_checkdata_alot(int argc,char **argv)
         res = ft_strjoinee(res,argv[i]);
         i++;
     }
-    i = 0;
-    while(res[i])
-    {
-        printf("b%cb \n",res[i]);
-        i++;
-    }
+///    i = 0;
+///   while(res[i])
+///    {
+///        printf("b%cb \n",res[i]);
+///        i++;
+///    }
     arr = ft_strsplit(res);
 
-    i = 0;
-    while(arr[i])
-    {
-        printf("c%sc \n",arr[i]);
-        i++;
-    }
+///    i = 0;
+///    while(arr[i])
+///   {
+///        printf("c%sc \n",arr[i]);
+///        i++;
+///    }
 
     ress = ft_chartoint(arr);
+    free(res);
+    ft_free_arr(arr);
+///    free(*arr);
+///    res = NULL;
+///    arr = NULL;
     return(ress);
 }

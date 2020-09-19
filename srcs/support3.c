@@ -21,7 +21,7 @@ int *ft_cpy(const int* stack1)
     i = 0;
     if(!(res = (int*)malloc(sizeof(int) * stack1[0])))
         return(NULL);
-    while (i < stack1[0] + 1)
+    while (i < stack1[0])
     {
       res[i] = stack1[i + 1];
       i++;

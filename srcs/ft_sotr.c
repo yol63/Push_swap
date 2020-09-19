@@ -21,11 +21,10 @@ int *ft_sortsort(int* stack1)
     i = 0;
     j = 0;
     res = ft_cpy(stack1);
-
-    while (i < stack1[0]) {
-        printf("a=%d=  ", res[i]);
-        i++;
-    }
+///    while (i < stack1[0]) {
+///        printf("a=%d=  ", res[i]);
+///        i++;
+///    }
 
     i = 0;
     while (i < stack1[0])
@@ -41,11 +40,11 @@ int *ft_sortsort(int* stack1)
     }
 
 
-    i = 0;
-    while (i < stack1[0]) {
-        printf("b=%d= ", res[i]);
-        i++;
-    }
+///    i = 0;
+///    while (i < stack1[0]) {
+///        printf("b=%d= ", res[i]);
+///        i++;
+///    }
     return(res);
 }
 
@@ -68,11 +67,13 @@ int *ft_sort(int* stack1, int size)
         j++;
     }
     res[j] = temp[stack1[0] - 1];
-    i = 0;
-    while (i < size) {
-        printf("c=%d= ", res[i]);
-        i++;
-    }
+///    i = 0;
+///    while (i < size) {
+///        printf("c=%d= ", res[i]);
+///        i++;
+///    }
+    free(temp);
+    temp = NULL;
     return(res);
 }
 
@@ -109,7 +110,7 @@ void ft_use_rb(int* stack1,int* stack2 ,int num, int mode)
    int i;
 
    i = 0;
-   while (i < num - 1)
+   while (i < num - 2)
    {
        ft_use_command_r(stack1);
        if (mode == 0)
